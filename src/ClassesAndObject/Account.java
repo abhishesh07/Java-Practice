@@ -57,4 +57,8 @@ public class Account {
     public Date getDateCreated() {
         return dateCreated;
     }
+
+    public String toString(){
+        return this.id +" "+ this.balance +" "+ this.annualInterestRate +" "+ this.dateCreated;
+    }
 }
