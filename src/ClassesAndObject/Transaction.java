@@ -20,7 +20,6 @@ public class Transaction {
     public char getType() {
         return type;
     }
-
     //@Override
     public String toString() {
         return "Transaction{" +
