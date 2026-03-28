@@ -1,12 +1,17 @@
 class MyTable{
-    public void printTable(int n){
+//    public void printTable(int n){
+//        for(int i=1;i<=10;i++){
+//            System.out.println(n +" * "+i+" = "+n*i);
+//        }
+//    }
+    public synchronized void printTable(int n){
         for(int i=1;i<=10;i++){
             System.out.println(n +" * "+i+" = "+n*i);
         }
     }
 }
 class Mythread3 extends Thread{
-    MyTable t1=new MyTable();
+    MyTable t=new MyTable();
     int n;
 
     public void setN(int n) {
@@ -14,11 +19,11 @@ class Mythread3 extends Thread{
     }
 
     public Mythread3(MyTable t1, int n) {
-        this.t1 = t1;
+        this.t = t1;
         this.n = n;
     }
     public void run(){
-        t1.printTable(n);
+        t.printTable(n);
     }
 }
 public class testThread1 {
