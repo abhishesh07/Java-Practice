@@ -33,7 +33,7 @@ public class MergeTwoSortedArray {
 
     public static void main(String[] args) {
         int[] arr1={2,4,6,8};
-        int[] arr2={1,3,5,7};
+        int[] arr2={3,9};
         System.out.println(Arrays.toString(mergeTwoSortedArray(arr1,arr2)));
         System.out.println(Arrays.toString(merge(arr1,arr2)));
     }

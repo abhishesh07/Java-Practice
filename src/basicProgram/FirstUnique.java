@@ -13,11 +13,11 @@ public class FirstUnique {
             if (map.get(c) == 1)
                 return c;
 
-        return '-';
+        return '0';
     }
 
     public static void main(String[] args) {
-        String str="aaaaa";
+        String str="aacbdaaa";
         System.out.println(firstNonRepeating(str));
     }
 }
